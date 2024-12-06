@@ -1,0 +1,7 @@
+stages:
+  - name: Deploy to Kubernetes
+    jobs:
+      - name: Apply Rancher Config
+        steps:
+          - name: Apply Rancher Config
+            run: kubectl apply -f rancher-config.yaml
